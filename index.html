@@ -1,0 +1,56 @@
+
+<html>
+    <head>
+       <meta charset="utf-8">
+    <meta   name="viewport" content="width=device-width, initial-scale=1">
+	<title>MEMORIES</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+       
+        <style type="text/css">
+            body, html{ 
+                position: absolute; 
+                top: 0px; 
+                left: 0px; 
+                height: 100%; 
+                width: 100%; 
+                margin: 0 0 0 0; 
+                padding: 0 0 0 0; 
+                overflow: hidden; 
+
+            }
+            .page{
+                background-color: black;
+                height: 100%; 
+                width: 100%; 
+                margin: 0 0 0 0; 
+                padding: 0 0 0 0; 
+                overflow: hidden; 
+                color:white;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+         <script type="text/javascript" src="three.js"></script>
+          <script type="text/javascript" >
+            var img = new Image();
+              function startNewGame(){
+                  document.body.removeChild(document.getElementById("P"));
+                    // Загружаем файл изображения
+                    img.src = "UV.jpg";
+
+              }
+          </script>
+       
+        <script type="text/javascript" src="OrbitControls.js"></script>
+        <script type="text/javascript" src="TweenMax.min.js"></script>
+         <div class="page" id="P">
+             <h1>card game: MEMORIES</h1>
+             <h2 onclick="startNewGame()">View Demo</h2>
+         </div>
+        <script type="text/javascript" src="WebGL.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
