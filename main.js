@@ -1,6 +1,6 @@
                   let CardAmout=12;
 let AmoutOfTypes=4;
-
+//
 let mouse = new THREE.Vector2();
 let NewTexture={
     state:0,
